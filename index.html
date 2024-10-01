@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cadastro">
+        <h1>Formulário de Cadastro</h1>
+        <br>
+        <form action="">
+            <label for="lnome">Nome: </label>
+            <input type="text" id="lnome" name="lnome" placeholder="DIgite seu nome..." maxlength="30" autofocus required>
+            
+            <br><br>
+
+            <label for="ldtnasc">Data de Nascimento: </label>
+            <input type="date" id="ldtnasc" name="ldtnasc" min="1945-01-01" max="2009-01-01">
+             
+            <br><br>
+
+            <label for="lSexo">Sexo</label>
+            <input type="radio" name="lSexo" id="lSexoF" value="F" checked>Feminino 
+            <input type="radio" name="lSexo" id="lSexoM" value="M">Masculino
+            
+            <br><br>
+
+            <label for="lIdade">Idade: </label>
+            <input type="number" name="lIdade" id="lIdade" min="18" max="50">
+            <label for="lMaior">Maior de idade</label>
+            <input type="checkbox" name="lMaior" id="lMaior">
+            
+            <br><br>
+
+            <label for="lhorarioentrevista">Horário da Entrevista</label>
+            <input type="time" id="ihorarioentrevista" name="nhorarioentrevista">
+            
+            <br><br>
+
+            <label for="lsitePessoal">Site Pessoal: </label>
+            <input type="url" id="lsitePessoal" name="lsitePessoal" value="https://www.cnn.com.br/">
+            
+            <br><br>
+
+            <label for="lTelefone">Telefone</label>
+            <input type="tel" name="iTelefone" id="iTelefone" placeholder="99 99999 9999" pattern=" [0-9] {2} - [0-9] {5} - [0-9] {4}">
+            
+            <br><br>
+
+            <label for="ltempoExp">Tempo de experiência</label>
+            <input list="ltempoExp">
+                <datalist id="ltempoExp">
+                    <option value="Menos de um ano">Novato</option>
+                    <option value="Entre 2 a 5 anos">Pleno</option>
+                    <option value="Mais de 5 anos">Senior</option>
+                </datalist>
+               
+                <br><br>
+
+                <label for="lDataHorarioEntrevista">Data/Horário entrevista: </label>
+                <input type="datetime-local" name="lDataHorarioEntrevista" id="lDataHorarioEntrevista">
+                
+                <br><br>
+                
+                <label for="lEmail">E-mail: </label>
+                <input type="email" name="lEmail" id="lEmail">
+                
+                <br><br>
+                
+                <label for="lUltimoEmprego">Data do último emprego: </label>
+                <input type="month" name="lUltimoEmprego" id="lUltimoEmprego">               
+                
+                <br><br>
+                
+                <label for="lConhecimento">Conhecimento em informática</label>
+               <select name="iConhecimento" id="lConhecimento" size="3" multiple>
+                    <option value="win">Windows</option>               
+                    <option value="word">Word</option>
+                    <option value="excel">Excel</option>
+                    <option value="html">Html</option>
+               </select> 
+
+               <br><br>
+
+               <label for="lArquivo">Arquivo: </label>
+               <input type="file" name="nArquivo" id="lArquivo" accept=".docx">
+
+               <br><br>
+
+               <label for="lCor">Selecione uma cor: </label>
+               <input type="color" name="nCor" id="lCor">
+
+               <br><br>
+
+               <label for="lSenha">Digite a senha: </label>
+               <input type="password" name="nSenha" id="lSenha">
+                
+               <br><br>
+
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+        </form>
+
+    </div>
+</body>
+</html>
